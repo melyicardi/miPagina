@@ -35,15 +35,15 @@ a {
     text-decoration: none;
 }
 
-a:link {
+ul li a:link {
     color: #fff;
 }
 
-a:visited {
+ul li a:visited {
     color: #fff;
 }
 
-a:hover {
+ul li a:hover {
     color: #fff;
     font-size: 22px;
 
