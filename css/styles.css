@@ -13,21 +13,39 @@ body {
 h1 {
     font-size: 52px;
     margin: 20px;
-    padding: 0px 5px 10px 5px ;
+    padding: 0px 5px 10px 5px;
 }
 
 h2 {
     font-size: 42px;
     margin: 20px;
-    padding: 0px 5px 10px 5px ;
+    padding: 0px 5px 10px 5px;
 }
 
 p {
     font-size: 22px;
     margin: 20px;
-    padding: 30px 5px 30px 5px ;
+    padding: 30px 5px 30px 5px;
     line-height: 1.7;
     text-align: justify;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+    font-size: 22px;
 
 }
 
@@ -38,32 +56,35 @@ p {
     display: grid;
     gap: 10px;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas:"rock banner" ;
+    grid-template-areas: "rock banner";
 }
 
 
 header {
-   
+
     background: rgb(61, 21, 61);
-    padding: 2px; 
+    padding: 2px;
     border-radius: 10px;
     grid-column-start: 1;
     grid-column-end: -1;
-    
+
 }
+
 section {
-    background:rgb(63, 5, 5);
+    background: rgb(63, 5, 5);
     padding: 0 10px 0 10px;
     border-radius: 10px;
 
 }
 
 img {
-        display:block;
-        margin:auto;
-        padding-bottom: 30px;
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
 }
- 
+
 
 
 .banner {
@@ -82,6 +103,7 @@ img {
 
 
 }
+
 .banner h3 {
     font-size: 30px;
     margin-top: 10px;
@@ -96,15 +118,17 @@ img {
     margin: 30px;
     font-weight: bold;
 }
-.banner .disco  {
+
+.banner .disco {
     color: rgb(245, 239, 209);
 
-    
 
-    
+
+
 }
+
 .footer {
-	text-align: center;
+    text-align: center;
 }
 
 
@@ -115,78 +139,109 @@ img {
     .contenedor {
         width: 90%;
         margin: 20px auto;
-    
+
         display: grid;
         gap: 10px;
         grid-template-columns: 2fr 1fr;
-        grid-template-areas:"rock banner";
+        grid-template-areas: "rock banner";
     }
-	
-	
+
+
 }
 
 
 
-@media screen and (min-width: 481px) and (max-width: 769px){ 
+@media screen and (min-width: 481px) and (max-width: 769px) {
     h1 {
-        font-size: 40px;
+        font-size: 36px;
         margin: 10px;
     }
-    
+
     h2 {
         font-size: 30px;
         margin: 10px;
     }
-    
+
     p {
-        font-size: 18px;
+        font-size: 16px;
         margin: 10px;
         line-height: 1.7;
         text-align: justify;
-    
+
     }
-	.contenedor {
+
+    .img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .contenedor {
         width: 90%;
         margin: 10px auto;
-     
+
         display: grid;
         gap: 10px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: "rock"
-                             "banner";
+            "banner";
+    }
+
+    .banner h3 {
+        font-size: 17px;
+    }
+
+    .banner ul {
+        font-size: 22px;
     }
 }
 
+
 @media screen and (max-width: 480px) {
     h1 {
-        font-size: 34px;
-        margin: 5px;
-    }
-    
-    h2 {
-        font-size: 28px;
-        margin: 5px;
-    }
-    
-    p {
         font-size: 24px;
+        margin: 5px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    p {
+        font-size: 12px;
         margin: 5px;
         line-height: 1.7;
         text-align: justify;
-    
+
     }
 
-	.contenedor {
-        width: 90%;
+    .img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .contenedor {
+        width: 100%;
         margin: 5px auto;
-    
+
         display: grid;
         gap: 5px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "rock"
-                             "banner";
+            "banner";
+    }
+    .banner h3 {
+        font-size: 20px;
+    }
+    
+    .banner ul {
+        font-size: 15px;
     }
 }
+
+
+
+
 /* FIN MEDIA QUERIES  */

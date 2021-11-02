@@ -10,6 +10,19 @@ body {
 	font-family: 'Roboto', sans-serif;
 	min-height: 100vh;
 }
+a {
+	text-decoration: none;
+}
+ a:link {
+	color: #fff;
+}
+a:visited {
+	color:#fff;
+}
+a:hover {
+	color: #fff;
+	
+}
 
 .contenedor {
 	width: 90%;
@@ -63,18 +76,7 @@ body {
 	flex-direction: column;
 	justify-content: flex-end;
 }
- a {
-	text-decoration: none;
-}
-.textos a:link {
-	color: #fff;
-}
-.textos a:visited {
-	color:#fff;
-}
-.textos a:hover {
-	color: #fff;
-}
+
 .banner {
 	border-radius: 10px;
 	text-align: center; 
@@ -99,6 +101,9 @@ body {
 .banner ul li {
 	margin: 15px;
 	font-weight: bold;
+}
+.banner a:hover {
+	font-size: 20px;
 }
 
 .banner .boton {
