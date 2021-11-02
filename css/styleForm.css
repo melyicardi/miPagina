@@ -1,0 +1,13 @@
+
+body {
+    background: #000;
+}
+
+
+.input-group input[type="text"]::placeholder{
+    font-weight: bold;
+}
+
+.card-personalizada {
+    width: 480px
+}

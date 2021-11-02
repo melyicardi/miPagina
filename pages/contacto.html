@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styleForm.css">
+
+
+</head>
+
+<body>
+    <div class="container my-5 text-white bg-dark card-personalizada">
+
+        <form>
+
+            <div class="card text-white bg-dark card-personalizada" >
+                <div class="card-header bg-dark">
+                    <h2>Contacto</h2>
+                </div>
+
+                <div class="card-body">
+
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <div id="missing" class="alert alert-danger d-none" role="alert">
+                                Faltan algunos campos!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label>Nombre</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input id="nombre" type="text" class="form-control rounded placeholder" placeholder=""
+                                    aria-label="FirstName" aria-describedby="basic-addon1">
+                            </div>
+                        </div>                  
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label>Email</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input id="email" type="text" class="form-control rounded" placeholder=""
+                                    aria-label="Email" aria-describedby="basic-addon1">
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label>Mensaje</label>
+                            <div class="input-group">
+                                <textarea id="mensaje" class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <span class="text-muted">Agregue su mensaje aqui.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-dark d-flex justify-content-end">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <button class="btn btn-secondary mx-1" type="reset">Cancelar</button>
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </form>
+
+
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
